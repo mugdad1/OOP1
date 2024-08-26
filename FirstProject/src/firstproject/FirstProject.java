@@ -9,6 +9,7 @@ public class FirstProject {
     public static void main(String[] args) {
         //main method follows main class
         System.out.println("HELLO WORLD");
+        //جملة الطباعة تتبع كلاس السستمsystem.out
     }
 
 }
