@@ -6,14 +6,14 @@ public class GradeBook {
 
     // Define a constructor to initialize the course name
     public GradeBook(String courseName) {
-        // Set the course name using the constructor parameter
+        // Set the course name using the constructor parameter + this. is used to make the string is excact
         this.courseName = courseName;
     }
 
     // Define a method to display a welcome message using the course name
     public void displayMessage() {
         // Print a welcome message with the course name
-        System.out.println("Welcome to the " + courseName + " GradeBook!");
+        System.out.println("Welcome to the "+ courseName + " GradeBook!");//%s add
     }
 
     // Define a setter method to change the course name
