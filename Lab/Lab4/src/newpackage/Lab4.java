@@ -44,7 +44,7 @@ class Point {
 
 public class Lab4 {
     public static void main(String[] args) {
-        Point p1 = new Point(4, 5); // Create a new Point object
+        Point p1 = new Point(4,2); // Create a new Point object + remove the parameter to use the defualt constructer
         System.out.println(p1.getX()); // Call getX() method
         System.out.println(p1.getY()); // Call getY() method
         p1.setX(10); // Set new value for x
