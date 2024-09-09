@@ -10,8 +10,16 @@
 <project name="GradeBook" default="default" basedir=".">
     <description>Builds, tests, and runs the project GradeBook.</description>
     <import file="nbproject/build-impl.xml"/>
-    <!--
+    
 
+<taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+            <!-- Change the relative reference to point at the unzip location. -->
+            <!-- <pathelement location="../ant-salesforce.jar" /> -->  	
+            <pathelement location="C:/Users/mugdad/SFDC_ANT/ant-salesforce.jar" />	
+        </classpath>
+</taskdef> 
+<!--
     There exist several targets which are by default empty and which can be 
     used for execution of your tasks. These targets are usually executed 
     before and after some main targets. They are: 

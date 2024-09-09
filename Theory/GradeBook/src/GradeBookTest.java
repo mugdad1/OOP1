@@ -6,7 +6,7 @@ public class GradeBookTest {
 
     // Define the main method to run the program
     public static void main(String[] args) {
-
+        
         // Create a new Scanner object to read input from the keyboard
         Scanner input = new Scanner(System.in);
 
