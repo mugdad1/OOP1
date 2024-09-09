@@ -4,36 +4,52 @@ package newpackage;
  *
  * @author mugdad
  */
-class point {
-//class
-    
-    point() {
-// constructer 
-        x = 1; 
+class Point {
+    // Class fields
+     private int x;
+     private int y;
+
+    // Default constructor
+    Point() {
+        x = 1;
         y = 2;
-        // if you make x and y privte it can't be used outside the class
     }
 
-    point(int _x, int _y) {
+    // Parameterized constructor
+    Point(int _x, int _y) {
         x = _x;
         y = _y;
     }
 
-    int x;
-    int y;
+    // Getter for x
+    int getX() {
+        return x;
+    }
 
+    // Getter for y
+    int getY() {
+        return y;
+    }
+
+    // Setter for x
+    void setX(int _x) {
+        x = _x;
+    }
+
+    // Setter for y
+    void setY(int _y) {
+        y = _y;
+    }
 }
 
 public class Lab4 {
-
     public static void main(String[] args) {
-        point p1 = new point(4,5); //remove 5,
-        System.out.println(p1.x);
-        System.out.println(p1.y);
-        p1.x = 10;
-        p1.y = 20;
-        System.out.println(p1.x);
-        System.out.println(p1.y);
-
+        Point p1 = new Point(4, 5); // Create a new Point object
+        System.out.println(p1.getX()); // Call getX() method
+        System.out.println(p1.getY()); // Call getY() method
+        p1.setX(10); // Set new value for x
+        p1.setY(20); // Set new value for y
+        System.out.println(p1.getX()); // Print updated x
+        System.out.println(p1.getY()); // Print updated y
     }
 }
