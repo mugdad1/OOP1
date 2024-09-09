@@ -26,13 +26,7 @@ public class GradeBook {
         return courseName;
     }
 
-    // Define a method to calculate the product of two integers
-    public int x() {
-        int e = 2;
-        int w = 4;
-        int z = e * w;
-        return z;
-    }
+   
 }
 /*
  * 
