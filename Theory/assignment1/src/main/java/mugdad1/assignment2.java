@@ -16,3 +16,4 @@ public class assignment2 {
         return inputString.toUpperCase();
     }
 }
+
