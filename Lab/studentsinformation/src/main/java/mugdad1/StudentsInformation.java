@@ -3,18 +3,17 @@ package mugdad1;
 public class StudentsInformation {
 
     public static void main(String[] args) {
-
-        Student st1 = new Student(101, "ahmed ", 45f);
+        // Create student instances
+        Student st1 = new Student(101, "Ahmed", 4.5f);
         st1.DisplayInfo();
 
-        Student st2 = new Student(101, "ahlam ", (float) 2.5f);
+        Student st2 = new Student(102, "Ahlam", 2.5f);
         st2.DisplayInfo();
 
-        /*st1.setStudentID(52);// we modifed the student id using setters and getters
-        st1.setStudentGPA(7.5f);
-        st2.setStudentName("null");
-*/
-
+        // Example of using setters
+        st1.setStudentID(52);
+        st1.setStudentGPA(34f);
+        st1.setStudentName("Ali");
+        st1.DisplayInfo();
     }
-
 }

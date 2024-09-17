@@ -4,10 +4,23 @@ public class Student {
 
     private int StudentID;
     private String StudentName;
-    public float StudentGPA;
+    private float StudentGPA;
 
+    // Constructor
+    public Student(int StudentID, String StudentName, float StudentGPA) {
+        this.StudentID = StudentID;
+        this.StudentName = StudentName;
+        setStudentGPA(StudentGPA); // Use setter to validate GPA
+    }
+
+    // Setters
     public void setStudentGPA(float studentGPA) {
-        this.StudentGPA = studentGPA;
+        if (studentGPA >= 0 && studentGPA <= 5) {
+            this.StudentGPA = studentGPA;
+        } else {
+            System.out.println("Invalid GPA. It must be between 0 and 5.");
+            this.StudentGPA = 0; // Set a default value or handle it as needed
+        }
     }
 
     public void setStudentName(String studentName) {
@@ -18,6 +31,7 @@ public class Student {
         this.StudentID = studentID;
     }
 
+    // Getters
     public float getStudentGPA() {
         return StudentGPA;
     }
@@ -30,23 +44,10 @@ public class Student {
         return StudentName;
     }
 
-    Student(int StudentID, String StudentName, float StudentGPA) {
-        this.StudentID = StudentID;
-        if (StudentGPA >= 0 && StudentGPA<=5){
-            this.StudentGPA = StudentGPA;
-
-            
-
-        }else
-        System.out.println(" wrong gpa ");
-        this.StudentName = StudentName;
-
+    // Method to display student information
+    public void DisplayInfo() {
+        System.out.println("Student ID: " + StudentID);
+        System.out.println("Student Name: " + StudentName);
+        System.out.println("Student GPA: " + StudentGPA);
     }
-
-    void DisplayInfo() {
-        System.out.println("std id:" + StudentID);
-        System.out.println("std name:" + StudentName);
-        System.out.println("std GPA:" + StudentGPA);
-    }
-
 }
