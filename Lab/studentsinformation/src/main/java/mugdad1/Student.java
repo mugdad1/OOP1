@@ -4,18 +4,18 @@ public class Student {
 
     private int StudentID;
     private String StudentName;
-    private float StudentGPA;
+    public float StudentGPA;
 
     public void setStudentGPA(float studentGPA) {
-        StudentGPA = studentGPA;
+        this.StudentGPA = studentGPA;
     }
 
     public void setStudentName(String studentName) {
-        StudentName = studentName;
+        this.StudentName = studentName;
     }
 
     public void setStudentID(int studentID) {
-        StudentID = studentID;
+        this.StudentID = studentID;
     }
 
     public float getStudentGPA() {
@@ -32,8 +32,14 @@ public class Student {
 
     Student(int StudentID, String StudentName, float StudentGPA) {
         this.StudentID = StudentID;
+        if (StudentGPA >= 0 && StudentGPA<=5){
+            this.StudentGPA = StudentGPA;
+
+            
+
+        }else
+        System.out.println(" wrong gpa ");
         this.StudentName = StudentName;
-        this.StudentGPA = StudentGPA;
 
     }
 
