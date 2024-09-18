@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestShip",
+            "request": "launch",
+            "mainClass": "mugdad1.TestShip",
+            "projectName": "assignment1"
+        },
+        {
+            "type": "java",
+            "name": "assignment2",
+            "request": "launch",
+            "mainClass": "mugdad1.assignment2",
+            "projectName": "assignment1"
+        },
+        {
+            "type": "java",
             "name": "Lab4",
             "request": "launch",
             "mainClass": "mugdad1.Lab4",
