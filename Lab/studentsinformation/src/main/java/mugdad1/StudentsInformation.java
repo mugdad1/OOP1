@@ -12,7 +12,7 @@ public class StudentsInformation {
 
         // Example of using setters
         st1.setStudentID(52);
-        st1.setStudentGPA(34f);
+        //st1.setStudentGPA(34f);
         st1.setStudentName("Ali");
         st1.DisplayInfo();
     }
