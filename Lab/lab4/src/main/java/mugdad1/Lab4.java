@@ -1,33 +1,34 @@
 package mugdad1;
 
 public class Lab4 {
+
     public static void main(String[] args) {
         // Create a new Point object using the parameterized constructor
-        Point p1 = new Point(4, 2);
-        
+        Point point = new Point(4, 2);
+
         // Print initial coordinates
-        System.out.println("Initial X: " + p1.getX()); // Call getX() method
-        System.out.println("Initial Y: " + p1.getY()); // Call getY() method
-        
+        System.out.println("Initial X: " + point.getX()); // Call getX() method
+        System.out.println("Initial Y: " + point.getY()); // Call getY() method
+
         // Set new values for x and y
-        p1.setX(10);
-        p1.setY(20);
-        
+        point.setX(10);
+        point.setY(20);
+
         // Print updated coordinates
-        System.out.println("Updated X: " + p1.getX()); // Print updated x
-        System.out.println("Updated Y: " + p1.getY()); // Print updated y
+        System.out.println("Updated X: " + point.getX()); // Print updated x
+        System.out.println("Updated Y: " + point.getY()); // Print updated y
     }
 }
 
 class Point {
+
     // Class fields
     private int x;
     private int y;
 
     // Default constructor
     public Point() {
-        this.x = 1;
-        this.y = 2;
+        this(1, 2);
     }
 
     // Parameterized constructor

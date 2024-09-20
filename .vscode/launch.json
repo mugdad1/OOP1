@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GradeBookTest",
+            "request": "launch",
+            "mainClass": "mugdad1.GradeBookTest",
+            "projectName": "gradebook"
+        },
+        {
+            "type": "java",
             "name": "StudentsInformation",
             "request": "launch",
             "mainClass": "mugdad1.StudentsInformation",
