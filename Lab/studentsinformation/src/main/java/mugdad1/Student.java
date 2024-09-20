@@ -2,52 +2,52 @@ package mugdad1;
 
 public class Student {
 
-    private int StudentID;
-    private String StudentName;
-    private float StudentGPA;
+    private int studentId; // Use camelCase for variable names
+    private String studentName;
+    private float studentGPA;
 
     // Constructor
-    public Student(int StudentID, String StudentName, float StudentGPA) {
-        this.StudentID = StudentID;
-        this.StudentName = StudentName;
-        setStudentGPA(StudentGPA); // Use setter to validate GPA
+    public Student(int studentId, String studentName, float studentGPA) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        setStudentGPA(studentGPA); // Use setter to validate GPA
     }
 
     // Setters
     public void setStudentGPA(float studentGPA) {
         if (studentGPA >= 0 && studentGPA <= 5) {
-            this.StudentGPA = studentGPA;
+            this.studentGPA = studentGPA;
         } else {
             System.out.println("Invalid GPA. It must be between 0 and 5.");
-            this.StudentGPA = 0; // Set a default value or handle it as needed
+            this.studentGPA = 0; // Set a default value or handle it as needed
         }
     }
 
     public void setStudentName(String studentName) {
-        this.StudentName = studentName;
+        this.studentName = studentName;
     }
 
-    public void setStudentID(int studentID) {
-        this.StudentID = studentID;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
     // Getters
     public float getStudentGPA() {
-        return StudentGPA;
+        return studentGPA;
     }
 
-    public int getStudentID() {
-        return StudentID;
+    public int getStudentId() {
+        return studentId;
     }
 
     public String getStudentName() {
-        return StudentName;
+        return studentName;
     }
 
     // Method to display student information
-    public void DisplayInfo() {
-        System.out.println("Student ID: " + StudentID);
-        System.out.println("Student Name: " + StudentName);
-        System.out.println("Student GPA: " + StudentGPA);
+    public void displayInfo() {
+        System.out.println("Student ID: " + studentId);
+        System.out.println("Student Name: " + studentName);
+        System.out.println("Student GPA: " + studentGPA);
     }
 }
