@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "mugdad1.Client",
+            "projectName": "assignment2"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "mugdad1.Server",
+            "projectName": "assignment2"
+        },
+        {
+            "type": "java",
+            "name": "TestSpeedBoat",
+            "request": "launch",
+            "mainClass": "mugdad1.TestSpeedBoat",
+            "projectName": "assignment1"
+        },
+        {
+            "type": "java",
             "name": "GradeBookTest",
             "request": "launch",
             "mainClass": "mugdad1.GradeBookTest",
