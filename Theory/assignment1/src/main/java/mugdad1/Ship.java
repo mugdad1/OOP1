@@ -45,7 +45,7 @@ public class Ship {
         System.out.println(this.name + " is at (" + this.x + ", " + this.y + ").");
     }
 
-    // Getter and setter methods
+    // Getter and slintetter methods
     public double getX() {
         return x;
     }

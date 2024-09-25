@@ -25,6 +25,7 @@ class ClientHandler extends Thread {
         this.socket = socket;
     }
 
+    @Override
     public void run() {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
