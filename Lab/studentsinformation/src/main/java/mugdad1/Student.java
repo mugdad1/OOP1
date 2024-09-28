@@ -4,7 +4,7 @@ public class Student {
 
     private int studentId; // Use camelCase for variable names
     private String studentName;
-    private float studentGPA;
+    private float studentGPA; // You can keep this as float if you prefer
 
     // Constructor
     public Student(int studentId, String studentName, float studentGPA) {
@@ -19,16 +19,24 @@ public class Student {
             this.studentGPA = studentGPA;
         } else {
             System.out.println("Invalid GPA. It must be between 0 and 5.");
-            this.studentGPA = 0; // Set a default value or handle it as needed
+            this.studentGPA = 0; // Set a default value
         }
     }
 
     public void setStudentName(String studentName) {
-        this.studentName = studentName;
+        if (studentName != null && !studentName.trim().isEmpty()) {
+            this.studentName = studentName;
+        } else {
+            System.out.println("Invalid name. It cannot be null or empty.");
+        }
     }
 
     public void setStudentId(int studentId) {
-        this.studentId = studentId;
+        if (studentId > 0) {
+            this.studentId = studentId;
+        } else {
+            System.out.println("Invalid ID. It must be greater than 0.");
+        }
     }
 
     // Getters

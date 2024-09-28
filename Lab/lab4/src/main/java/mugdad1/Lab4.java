@@ -17,6 +17,9 @@ public class Lab4 {
         // Print updated coordinates
         System.out.println("Updated X: " + point.getX()); // Print updated x
         System.out.println("Updated Y: " + point.getY()); // Print updated y
+
+        // Print updated coordinates in a single line
+        System.out.println("Updated Point: (" + point.getX() + ", " + point.getY() + ")");
     }
 }
 
