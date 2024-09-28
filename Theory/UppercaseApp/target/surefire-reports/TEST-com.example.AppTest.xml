@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="0.026" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="0.04" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/jdk-21.0.4+7/lib"/>
-    <property name="sun.java.command" value="/home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/surefire/surefirebooter-20240924164545166_3.jar /home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/surefire 2024-09-24T16-45-45_057-jvmRun1 surefire-20240924164545166_1tmp surefire_0-20240924164545166_2tmp"/>
+    <property name="sun.java.command" value="/home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/surefire/surefirebooter-20240928070943150_3.jar /home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/surefire 2024-09-28T07-09-42_865-jvmRun1 surefire-20240928070943150_1tmp surefire_0-20240928070943150_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/test-classes:/home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/classes:/home/mugdad/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/surefire/surefirebooter-20240924164545166_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/mugdad/Documents/GitHub/OOP1/Theory/UppercaseApp/target/surefire/surefirebooter-20240928070943150_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+7-LTS"/>
     <property name="user.name" value="mugdad"/>
@@ -54,5 +54,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testApp" classname="com.example.AppTest" time="0.004"/>
+  <testcase name="testApp" classname="com.example.AppTest" time="0.007"/>
 </testsuite>

@@ -4,3 +4,4 @@ mvn clean package
 java -cp target/UppercaseApp-1.0-SNAPSHOT.jar mugdad1.UppercaseServer
 //runs the client (must be in diffrent termnal)
 java -cp target/UppercaseApp-1.0-SNAPSHOT.jar mugdad1.UppercaseClient
+@mugdad1 only notes
