@@ -11,7 +11,7 @@ public class GradeBook {
     private int courseNumber;
 
     // Define a constructor to initialize both course name and number
-    public GradeBook(String courseName, int courseNumber) {
+    GradeBook(String courseName, int courseNumber) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
     }

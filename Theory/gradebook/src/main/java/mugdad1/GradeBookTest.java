@@ -20,7 +20,7 @@ public class GradeBookTest {
         int courseNumber = input.nextInt();
 
         // Create a new GradeBook object with the user-entered course name and number
-        GradeBook myGradeBook = new GradeBook(courseName, courseNumber);
+        GradeBook myGradeBook = new GradeBook(courseName,courseNumber);
 
         // Display a blank line
         System.out.println();
