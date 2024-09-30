@@ -9,6 +9,20 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "mugdad1.Main",
+            "projectName": "lab6"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "mugdad1.main",
+            "projectName": "lab6"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "mugdad1.Main",
             "projectName": "strings"
         },
         {

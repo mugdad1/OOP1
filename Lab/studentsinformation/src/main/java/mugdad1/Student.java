@@ -7,7 +7,7 @@ public class Student {
     private float studentGPA; // You can keep this as float if you prefer
 
     // Constructor
-    public Student(int studentId, String studentName, float studentGPA) {
+    Student(int studentId, String studentName, float studentGPA) {
         this.studentId = studentId;
         this.studentName = studentName;
         setStudentGPA(studentGPA); // Use setter to validate GPA
