@@ -1,4 +1,5 @@
 package mugdad1;
+/* 
 public class Main {
 
     public static void main(String[] args) {
@@ -54,6 +55,54 @@ public class Main {
         // Print out the contents of the copied array
         for (int a : intArrayCopy) {
             System.out.println(a);
+        }
+
+        // Demonstrate the overloaded add methods
+        MathOperations mathOps = new MathOperations();
+        System.out.println("Sum of two integers: " + mathOps.add(5, 10)); // Output: 15
+        System.out.println("Sum of three integers: " + mathOps.add(5, 10, 15)); // Output: 30
+        System.out.println("Sum of two doubles: " + mathOps.add(5.5, 10.5)); // Output: 16.0
+    }
+}
+
+class MathOperations {
+    // Method to add two integers
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Overloaded method to add three integers
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Overloaded method to add two double values
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+*/
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Catalog object
+        Catalog catalog = new Catalog();
+        // Add three Article objects to the Catalog
+        catalog.add(new Article(1, "First Article"));
+        catalog.add(new Article(2, "Second Article"));
+        catalog.add(new Article(3, "Third Article"));
+
+        // Print the catalog
+        System.out.println("The contents of the catalog :");
+        catalog.print();
+
+        // Search for an Article object with number 2
+        Article foundArticle = catalog.search(2);
+
+        // Check if the Article object was found and print its name
+        if (foundArticle != null) {
+            System.out.println("Found article: " + foundArticle.getName());
         }
     }
 }

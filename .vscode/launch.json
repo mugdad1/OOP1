@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Shop",
+            "request": "launch",
+            "mainClass": "mugdad1.Shop",
+            "projectName": "strings"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "mugdad1.Main",
