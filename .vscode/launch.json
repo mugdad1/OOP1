@@ -1,9 +1,13 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        {
+            "type": "java",
+            "name": "Launch Java Program",
+            "request": "launch",
+            "mainClass": "mugdad1.TestShip" // Ensure this is the correct fully qualified name
+        },
         {
             "type": "java",
             "name": "Shop",
@@ -24,13 +28,6 @@
             "request": "launch",
             "mainClass": "mugdad1.main",
             "projectName": "lab6"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "mugdad1.Main",
-            "projectName": "strings"
         },
         {
             "type": "java",
@@ -66,13 +63,6 @@
             "request": "launch",
             "mainClass": "mugdad1.StudentsInformation",
             "projectName": "studentsinformation"
-        },
-        {
-            "type": "java",
-            "name": "TestShip",
-            "request": "launch",
-            "mainClass": "mugdad1.TestShip",
-            "projectName": "assignment1"
         },
         {
             "type": "java",
