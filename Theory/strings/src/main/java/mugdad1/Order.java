@@ -2,33 +2,35 @@ package mugdad1;
 
 import java.util.ArrayList;
 
+/**
+ * Represents an order containing articles selected by the user.
+ */
 public class Order {
-    // Private attribute
-    private ArrayList<Article> list;
+    private ArrayList<Article> articles; // List to store articles in the order
 
-    // Constructor
+    // Constructor initializes the order
     public Order() {
-        list = new ArrayList<Article>();
+        articles = new ArrayList<>();
     }
 
-    // Methods
+    // Adds an article to the order
     public void add(Article article) {
-        list.add(article);
-    }
-
-    public double calculateTotal() {
-        double total = 0;
-        for (Article a : list) {
-            total = total + a.getPrice();
+        if (article != null) {
+            articles.add(article); // Add article if it's not null
+        } else {
+            System.out.println("Cannot add a null article to the order.");
         }
-        return total;
     }
 
+    // Prints the receipt of the order
     public void printReceipt() {
-        System.out.printf("%n your Receipt %n");
-        for (Article article : list) {
-            System.out.println(article);
+        System.out.println("Receipt:");
+        if (articles.isEmpty()) {
+            System.out.println("No articles in the order."); // Handle empty order
+            return;
         }
-        System.out.printf("%-26s SAR %6.2f%n", "Total", calculateTotal());
+        for (Article article : articles) {
+            System.out.println(article); // Print each article in the order
+        }
     }
 }

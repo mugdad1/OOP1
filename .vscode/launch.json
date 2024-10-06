@@ -1,12 +1,18 @@
 {
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "mugdad1.Main",
+            "projectName": "strings"
+        },
         {
             "type": "java",
             "name": "Launch Java Program",
             "request": "launch",
-            "mainClass": "mugdad1.TestShip" // Ensure this is the correct fully qualified name
+            "mainClass": "mugdad1.TestShip"
         },
         {
             "type": "java",

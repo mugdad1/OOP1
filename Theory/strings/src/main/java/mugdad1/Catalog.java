@@ -2,37 +2,38 @@ package mugdad1;
 
 import java.util.ArrayList;
 
+/**
+ * Manages a collection of articles in the shop.
+ */
 public class Catalog {
-    // Private attribute
-    private ArrayList<Article> list;
+    private ArrayList<Article> list; // List to store articles
 
-    // Constructor
+    // Constructor initializes the article list
     public Catalog() {
-        list = new ArrayList<Article>();
+        list = new ArrayList<>();
     }
 
-    // Methods
+    // Adds an article to the catalog
     public void add(Article article) {
         list.add(article);
     }
 
+    // Prints all articles in the catalog
     public void print() {
-        System.out.println("The contents of the catalog :");
+        System.out.println("The contents of the catalog:");
         for (Article a : list) {
             System.out.println(a);
         }
     }
 
+    // Searches for an article by its number
     public Article search(int number) {
-        Article lookedForArticle = null;
         for (Article article : list) {
             if (article.getNumber() == number) {
-                lookedForArticle = article;
+                return article; // Return the article if found
             }
         }
-        if (lookedForArticle == null) {
-            System.out.println(" Article Number: " + number + " is not in the catalog");
-        }
-        return lookedForArticle;
+        System.out.println("Article Number: " + number + " is not in the catalog");
+        return null; // Return null if not found
     }
 }
