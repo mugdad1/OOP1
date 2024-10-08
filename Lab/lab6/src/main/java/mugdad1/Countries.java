@@ -1,16 +1,16 @@
 package mugdad1;
 
 public class Countries {
-    private String Name;
-    private String Capital;
-    private float Area;
-    private int Population;
+    private String name;
+    private String capital;
+    private float area;
+    private int population;
 
-    Countries(String Name, String Capital , float Area , int Population){
-        this.Name = Name;
-        this.Capital = Capital;
-        this.Area = Area;
-        this.Population = Population;
+    Countries(String name, String capital , float area , int population){
+        this.name = name;
+        this.capital = capital;
+        this.area = area;
+        this.population = population;
 
     }
     Countries(){
@@ -18,53 +18,53 @@ public class Countries {
     }
     
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCapital() {
-        return Capital;
+        return capital;
     }
 
-    public void setCapital(String Capital) {
-        this.Capital = Capital;
+    public void setCapital(String capital) {
+        this.capital = capital;
     }
 
     public float getArea() {
-        return Area;
+        return area;
     }
 
-    public void setArea(float Area) {
-        this.Area = Area;
+    public void setArea(float area) {
+        this.area = area;
     }
 
     public int getPopulation() {
-        return Population;
+        return population;
     }
 
-    public void setPopulation(int Population) {
-        this.Population = Population;
+    public void setPopulation(int population) {
+        this.population = population;
     }
     
-    Countries(String Name, String Capital){
-        this.Name= Name;
-        this.Capital = Capital;
+    Countries(String name, String capital){
+        this.name= name;
+        this.capital = capital;
 
     }
-    Countries(String Name, String Capital,float Area){
-        this.Name= Name;
-        this.Capital = Capital;
-        this.Area= Area;
+    Countries(String name, String capital,float area){
+        this.name= name;
+        this.capital = capital;
+        this.area= area;
         
     }
     void display(){
-        System.out.println("name " + Name);
-        System.out.println(" capital " + Capital);
-        System.out.println(" area  " + Area);
-        System.out.println(" population " + Population);
+        System.out.println("Name " + name);
+        System.out.println(" Capital " + capital);
+        System.out.println(" Area  " + area);
+        System.out.println(" Population " + population);
     }
 
 }
