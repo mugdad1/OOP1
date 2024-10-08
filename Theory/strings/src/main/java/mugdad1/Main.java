@@ -9,16 +9,17 @@ public class Main {
         Catalog catalog = new Catalog();
         
         // Add three Article objects to the Catalog
-        catalog.add(new Article(1, "First Article"));
-        catalog.add(new Article(2, "Second Article"));
-        catalog.add(new Article(3, "Third Article"));
+        catalog.add(new Article(1, "First Article",23));
+        catalog.add(new Article(2, "Second Article",31));
+        catalog.add(new Article(3, "Third Article",3));
+        catalog.add(new Article(4, "fourth article",4));
 
         // Print the catalog contents
         System.out.println("The contents of the catalog:");
         catalog.print();
 
         // Search for an Article object with number 2
-        Article foundArticle = catalog.search(2);
+        Article foundArticle = catalog.search(4);
 
         // Check if the Article object was found and print its name
         if (foundArticle != null) {

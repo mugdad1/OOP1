@@ -1,7 +1,6 @@
 
 
 package mugdad1.lab7;
-import java.util.Scanner;
 
 /**
  *
@@ -10,9 +9,10 @@ import java.util.Scanner;
 public class Lab7 {
 
     public static void main(String[] args) {
-       /* String str4 = "Demo";
-        String str2 = new String("Demo");
-        String str3 = "Demo";
+       /* 
+       *String str4 = "Demo";
+        *String str2 = new String("Demo");
+        *String str3 = "Demo";
         if(str1 == str2)
             System.out.println("str1 and str2 refer same obj");
         else

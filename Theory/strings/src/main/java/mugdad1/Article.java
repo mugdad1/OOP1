@@ -16,9 +16,11 @@ public class Article {
     }
 
     // Constructor with default price
-    public Article(int number, String name) {
-        this(number, name, 0.0);
+    /* 
+    public Article(int number,String name) {
+        this(number, name, 8);
     }
+    */
 
     // Getters for article attributes
     public int getNumber() {
