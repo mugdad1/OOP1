@@ -1,5 +1,4 @@
 package mugdad1;
-
 import java.util.ArrayList;
 
 /**
@@ -15,11 +14,21 @@ public class Order {
 
     // Adds an article to the order
     public void add(Article article) {
-        if (article != null) {
-            articles.add(article); // Add article if it's not null
-        } else {
-            System.out.println("Cannot add a null article to the order.");
+        if (article == null) {
+            throw new IllegalArgumentException("Cannot add a null article to the order.");
         }
+        if (articles.contains(article)) {
+            throw new IllegalArgumentException("Cannot add the same article to the order more than once.");
+        }
+        articles.add(article);
+    }
+
+    // Removes an article from the order
+    public void remove(Article article) {
+        if (article == null) {
+            throw new IllegalArgumentException("Cannot remove a null article from the order.");
+        }
+        articles.remove(article);
     }
 
     // Prints the receipt of the order
@@ -32,5 +41,14 @@ public class Order {
         for (Article article : articles) {
             System.out.println(article); // Print each article in the order
         }
+    }
+
+    // Calculates the total price of the order
+    public double getTotalPrice() {
+        double totalPrice = 0.0;
+        for (Article article : articles) {
+            totalPrice += article.getPrice();
+        }
+        return totalPrice;
     }
 }

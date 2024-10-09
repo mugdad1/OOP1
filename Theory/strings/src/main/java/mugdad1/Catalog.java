@@ -15,7 +15,21 @@ public class Catalog {
 
     // Adds an article to the catalog
     public void add(Article article) {
+        if (article == null) {
+            throw new IllegalArgumentException("Cannot add a null article to the catalog.");
+        }
         list.add(article);
+    }
+
+    // Searches for an article by its number
+    public Article search(int articleNumber) {
+        for (Article article : list) {
+            if (article.getNumber() == articleNumber) {
+                return article; // Return the article if found
+            }
+        }
+        System.out.println("Article Number: " + articleNumber + " is not in the catalog");
+        return null; // Return null if not found
     }
 
     // Prints all articles in the catalog
@@ -24,16 +38,5 @@ public class Catalog {
         for (Article a : list) {
             System.out.println(a);
         }
-    }
-
-    // Searches for an article by its number
-    public Article search(int number) {
-        for (Article article : list) {
-            if (article.getNumber() == number) {
-                return article; // Return the article if found
-            }
-        }
-        System.out.println("Article Number: " + number + " is not in the catalog");
-        return null; // Return null if not found
     }
 }

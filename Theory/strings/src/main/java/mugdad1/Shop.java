@@ -1,13 +1,36 @@
 package mugdad1;
 
+
+import java.util.Scanner;
+
 /**
  * Main class to run the shop application.
  */
 public class Shop {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         // Create articles
-        Article art1 = new Article(40, "Samsung Galaxy 55", 2229.95);
-        Article art2 = new Article(1, "Another Article", 100.0);
+        System.out.print("Enter the number of the first article: ");
+        int art1Number = scanner.nextInt();
+        System.out.print("Enter the name of the first article: ");
+        scanner.nextLine(); // Consume the newline character
+        String art1Name = scanner.nextLine();
+        System.out.print("Enter the price of the first article: ");
+        double art1Price = scanner.nextDouble();
+        Article art1 = new Article(art1Name, art1Price);
+
+        System.out.print("Enter the number of the second article: ");
+        int art2Number = scanner.nextInt();
+        System.out.print("Enter the name of the second article: ");
+        scanner.nextLine(); // Consume the newline character
+        String art2Name = scanner.nextLine();
+        System.out.print("Enter the price of the second article: ");
+        double art2Price = scanner.nextDouble();
+        Article art2 = new Article(art2Name, art2Price);
 
         // Create a catalog and add articles
         Catalog catalog = new Catalog();
@@ -18,8 +41,10 @@ public class Shop {
 
         // Create an order and add articles to it
         Order order = new Order();
-        order.add(catalog.search(40)); // Add article with number 40
-        order.add(catalog.search(1));   // Add article with number 1
+        order.add(catalog.search(art1Number)); // Add article with number art1Number
+        order.add(catalog.search(art2Number));   // Add article with number art2Number
         order.printReceipt(); // Print the order receipt
+
+        scanner.close();
     }
 }

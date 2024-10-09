@@ -1,31 +1,51 @@
 package mugdad1;
 
+import java.util.Scanner;
+
 /**
  * Main class to demonstrate catalog functionality.
  */
 public class Main {
     public static void main(String[] args) {
-        // Create a Catalog object
-        Catalog catalog = new Catalog();
-        
-        // Add three Article objects to the Catalog
-        catalog.add(new Article(1, "First Article",23));
-        catalog.add(new Article(2, "Second Article",31));
-        catalog.add(new Article(3, "Third Article",3));
-        catalog.add(new Article(4, "fourth article",4));
+        Scanner scanner = new Scanner(System.in);
 
-        // Print the catalog contents
-        System.out.println("The contents of the catalog:");
+        System.out.print("Enter the number of articles to add to the catalog: ");
+        int numArticles = scanner.nextInt();
+
+        Catalog catalog = new Catalog();
+        for (int i = 0; i < numArticles; i++) {
+            System.out.print("Enter the name of article " + (i + 1) + ": ");
+            String name = scanner.next();
+            System.out.print("Enter the price of article " + (i + 1) + ": ");
+            double price = scanner.nextDouble();
+            catalog.add(new Article(name, price));
+        }
+
+        // Print the catalog
         catalog.print();
 
-        // Search for an Article object with number 2
-        Article foundArticle = catalog.search(4);
-
-        // Check if the Article object was found and print its name
-        if (foundArticle != null) {
-            System.out.println("Found article: " + foundArticle.getName());
-        } else {
-            System.out.println("Article with number 2 not found.");
+        // Create an order and add some articles to it
+        Order order = new Order();
+        System.out.print("Enter the number of articles to add to the order: ");
+        int numOrderArticles = scanner.nextInt();
+        for (int i = 0; i < numOrderArticles; i++) {
+            System.out.print("Enter the number of the article to add to the order: ");
+            int articleNumber = scanner.nextInt();
+            Article article = catalog.search(articleNumber);
+            if (article != null) {
+                order.add(article);
+            } else {
+                System.out.println("Article not found in catalog.");
+            }
         }
+
+        // Print the order
+        order.printReceipt();
+
+        // Calculate the total price of the order
+        double totalPrice = order.getTotalPrice();
+        System.out.println("Total price of the order: " + totalPrice);
+
+        scanner.close();
     }
 }
