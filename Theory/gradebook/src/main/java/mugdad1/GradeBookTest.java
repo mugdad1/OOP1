@@ -4,7 +4,10 @@ package mugdad1;
 import java.util.Scanner;
 
 public class GradeBookTest {
-
+/**
+ * 
+ * @param args 
+ */
     // Define the main method to run the program
     public static void main(String[] args) {
 
