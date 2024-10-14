@@ -5,12 +5,15 @@ public class Student {
     private int studentId; // Use camelCase for variable names
     private String studentName;
     private float studentGPA; // You can keep this as float if you prefer
-
-    // Constructor
-    Student(int studentId, String studentName, float studentGPA) {
+    private Advisor adv;
+    // Constructor;
+    Student(int studentId, String studentName, float studentGPA, Advisor adv) {
         this.studentId = studentId;
         this.studentName = studentName;
-        setStudentGPA(studentGPA); // Use setter to validate GPA
+        setStudentGPA(studentGPA);
+        this.adv=adv;
+        
+// Use setter to validate GPA
     }
 
     // Setters
@@ -57,5 +60,6 @@ public class Student {
         System.out.println("Student ID: " + studentId);
         System.out.println("Student Name: " + studentName);
         System.out.println("Student GPA: " + studentGPA);
+        System.out.println("adv"+adv.toString());
     }
 }
