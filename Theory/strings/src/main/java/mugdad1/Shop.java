@@ -1,4 +1,4 @@
-package mugdad1;
+ package mugdad1;
 
 /**
  * Main class to run the shop application.
