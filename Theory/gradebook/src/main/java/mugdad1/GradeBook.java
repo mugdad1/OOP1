@@ -3,8 +3,6 @@ package mugdad1;
 // Define a class to represent a grade book for a school subject
 public class GradeBook {
 
-    public GradeBook() {
-    }
 
     // Declare private fields to store the name and number of the school subject
     private String courseName;
