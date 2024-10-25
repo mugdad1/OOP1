@@ -1,11 +1,12 @@
 package mugdad1;
 
 public class Countries {
+    //attributes used only in this class
     private String name;
     private String capital;
     private float area;
     private int population;
-
+//constrcuter intilize the object
     Countries(String name, String capital , float area , int population){
         this.name = name;
         this.capital = capital;
