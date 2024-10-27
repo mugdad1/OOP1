@@ -13,7 +13,7 @@ public class Catalog {
         list = new ArrayList<>();
     }
 
-    // Adds an article to the catalog
+    // Adds an article to the catalog<>
     public void add(Article article) {
         list.add(article);
     }
