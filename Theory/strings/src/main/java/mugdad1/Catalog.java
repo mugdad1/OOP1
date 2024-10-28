@@ -7,6 +7,9 @@ import java.util.ArrayList;
  */
 public class Catalog {
     private ArrayList<Article> list; // List to store articles
+    /**
+     * mkes article
+     */
 
     // Constructor initializes the article list
     public Catalog() {
