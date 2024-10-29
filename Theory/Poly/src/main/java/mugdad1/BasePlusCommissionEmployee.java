@@ -21,5 +21,3 @@ package mugdad1;
         return String.format("%s\nBase Salary: %.2f", super.toString(), baseSalary);
     }
 }
-
-
