@@ -53,6 +53,7 @@ public class StudentTest {
         s1.name="f"; // & this sets the nme outside the class
         System.out.println("id 2 is "+s2.getID()); //so this gets only the specific id 
         s1.displayStudentRecord(); 
-        s2.displayStudentRecord(); 
+        s2.displayStudentRecord();
+        s3.displayStudentRecord();
     } 
 }
