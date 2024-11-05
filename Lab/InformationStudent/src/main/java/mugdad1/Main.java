@@ -37,6 +37,7 @@ public class Main {
             target.Display();
         }
         String Name;
+        scanner.close();
         System.out.println("enter name ");
         Name = scanner.next();
         target = sList.search(Name);

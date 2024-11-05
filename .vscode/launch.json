@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "mugdad1.Main",
+            "projectName": "ch8"
+        },
+        {
+            "type": "java",
+            "name": "StaticUse",
+            "request": "launch",
+            "mainClass": "StaticUse",
+            "projectName": "ch8"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "mugdad1.Main",
+            "projectName": "InformationStudent"
+        },
+        {
+            "type": "java",
             "name": "UppercaseServer",
             "request": "launch",
             "mainClass": "mugdad1.UppercaseServer",

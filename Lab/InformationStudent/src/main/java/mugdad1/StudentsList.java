@@ -5,7 +5,7 @@ public class StudentsList {
 
     private ArrayList<Student> studentsList;
     public StudentsList(){
-        studentsList = new ArrayList();
+        studentsList = new ArrayList<Student>();
 
     }
      void addStudent(Student student){
