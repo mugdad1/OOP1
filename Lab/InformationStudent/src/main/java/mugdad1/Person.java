@@ -4,7 +4,9 @@ package mugdad1;
  *
  * @author mugdad
  */
-public class Person {
+public abstract class Person { /*
+    * abstract remove to make coder 
+     */
     private int Id;
     private String Name;
 
@@ -29,8 +31,8 @@ public class Person {
         this.Name = Name;
     }
 
-    void Display() {
+    abstract void Display(); /*{
         System.out.println("id = " + Id);
         System.out.println("Name = " + Name);
-    }
+    }*/
 }

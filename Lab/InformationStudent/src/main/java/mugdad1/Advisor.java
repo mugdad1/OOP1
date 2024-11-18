@@ -25,12 +25,19 @@ public class Advisor extends Person{
         super(Id, Name);
         this.Dept = Dept;
     }
-        void Display(){
+
+    @Override
+    void Display() {
+        
+    }
+        
+    /*void Display(){
             super.Display();
             System.out.println("dept "+Dept);
+
             
-    
+    */
     }
     
     
-}
+

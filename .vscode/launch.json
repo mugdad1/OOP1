@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "employees.Main",
+            "projectName": "Employee"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "mugdad1.Main",
             "projectName": "ch8"
         },

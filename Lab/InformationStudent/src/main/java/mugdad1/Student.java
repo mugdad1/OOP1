@@ -5,7 +5,7 @@ package mugdad1;
  *
  * @author mugdad
  */
-public class Student extends Person{ 
+public class Student extends Person implements Resonsible{  
     float Gpa;
     
     Student(int Id , String Name){
@@ -17,9 +17,20 @@ public class Student extends Person{
         this.Gpa=Gpa;
 }
     void Display(){
-        super.Display();
         System.out.println("gp" + Gpa);
     }
+    @Override
+    public void study() {
+        System.out.println("i'm student in java class");
+
+
+    }
+    @Override
+    public void printdata() {
+        System.out.println("i'm student in python class");
+
+    }
+
 
 
 
