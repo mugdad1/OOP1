@@ -16,7 +16,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        try{
+        /*try{
             Scanner scanner = new Scanner(System.in);
             int n1 = scanner.nextInt();
             int n2 = scanner.nextInt();
@@ -31,7 +31,7 @@ public class Main {
         {
             System.out.println("wrong type err");
         }
-        /* 
+        
         catch(Exception e )
 
         {
@@ -42,7 +42,7 @@ public class Main {
         
         System.out.println("bye bye ");
         */
-        /*Person st1 = new Student(1,"david");
+        Person st1 = new Student(1,"david");
         st1.getId();
         
         //Person st1 = new Person(1,"david");
@@ -87,7 +87,7 @@ public class Main {
             target.Display();
 
     }
-*/
+
     }
 }
 
