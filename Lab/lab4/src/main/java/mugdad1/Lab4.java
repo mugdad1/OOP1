@@ -4,7 +4,7 @@ public class Lab4 {
 
     public static void main(String[] args) {
         // Create a new Point object using the parameterized constructor
-        Point point = new Point(4, 2);
+        Point point = new Point();
 
         // Print initial coordinates
         System.out.println("Initial X: " + point.getX()); // Call getX() method
@@ -18,8 +18,8 @@ public class Lab4 {
         System.out.println("Updated X: " + point.getX()); // Print updated x
         System.out.println("Updated Y: " + point.getY()); // Print updated y
 
-        // Print updated coordinates in a single line
-        System.out.println("Updated Point: (" + point.getX() + ", " + point.getY() + ")");
+        // Print updated coordinates in a single line using toString()
+        System.out.println("Updated Point: " + point);
     }
 }
 
@@ -58,5 +58,11 @@ class Point {
     // Setter for y
     public void setY(int y) {
         this.y = y;
+    }
+
+    // Override toString method
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + ")";
     }
 }

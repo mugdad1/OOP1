@@ -1,43 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package mugdad1;
 
-/**
- *
- * @author mugdad
- */
-public class Advisor extends Person{
-    private String Dept;
-    public Advisor(int Id, String Name) {
-        super(Id, Name);
+public class Advisor extends Person {
+    private String department; // Changed to lowercase for consistency
+
+    // Constructor for Advisor with ID and Name
+    public Advisor(int id, String name) {
+        super(id, name);
     }
 
-    public String getDept() {
-        return Dept;
+    // Constructor for Advisor with ID, Name, and Department
+    public Advisor(int id, String name, String department) {
+        super(id, name);
+        this.department = department;
     }
 
-    public void setDept(String Dept) {
-        this.Dept = Dept;
-    }
-    public Advisor(int Id, String Name , String Dept) {
-        super(Id, Name);
-        this.Dept = Dept;
+    // Getter for Department
+    public String getDepartment() {
+        return department;
     }
 
+    // Setter for Department
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    // Method to display advisor information
     @Override
-    void Display() {
-        
+    public void display() {
+        display(); // Call the display method from the Person class
+        System.out.println("Department: " + department);
     }
-        
-    /*void Display(){
-            super.Display();
-            System.out.println("dept "+Dept);
-
-            
-    */
-    }
-    
-    
-
+}

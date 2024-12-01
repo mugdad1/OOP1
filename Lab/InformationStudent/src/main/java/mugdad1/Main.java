@@ -1,94 +1,60 @@
-/*
- *
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package mugdad1;
 
 import java.util.InputMismatchException;
-/**
- *
- * @author mugdad
- */
 import java.util.Scanner;
+
 public class Main {
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-        /*try{
-            Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) { // Try-with-resources for automatic closing
+            // Input for division
+            System.out.print("Enter first number (n1): ");
             int n1 = scanner.nextInt();
+            System.out.print("Enter second number (n2): ");
             int n2 = scanner.nextInt();
-            System.out.println(n1/n2);
-        }
-        catch (ArithmeticException e)
-        {
-            System.out.println("math err");
-        }
-        
-        catch (InputMismatchException e)
-        {
-            System.out.println("wrong type err");
-        }
-        
-        catch(Exception e )
 
-        {
-            
-            System.out.println(e);
+            // Check for division by zero
+            if (n2 == 0) {
+                System.out.println("Error: Division by zero.");
+            } else {
+                System.out.println("Result: " + (n1 / n2));
+            }
+
+            System.out.println("bye bye");
+
+            // Create and display students
+            Student s1 = new Student(2, "ali", 3.5f);
+            s1.display(); // Changed to lowercase
+            Student s2 = new Student(1, "moh", 4.5f);
+            s2.display(); // Changed to lowercase
+
+            // Create a StudentsList instance
+            StudentsList sList = new StudentsList();
+            sList.addStudent(s1);
+            sList.addStudent(s2);
+
+            // Search for a student by ID
+            System.out.print("Enter ID to search: ");
+            int id = scanner.nextInt();
+            Student target = sList.search(id);
+            if (target == null) {
+                System.out.println("Student not found.");
+            } else {
+                target.display(); // Changed to lowercase
+            }
+
+            // Search for a student by name
+            System.out.print("Enter name to search: ");
+            String name = scanner.next();
+            target = sList.search(name);
+            if (target == null) {
+                System.out.println("Student not found.");
+            } else {
+                target.display(); // Changed to lowercase
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Error: Please enter valid integers.");
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
-
-        
-        System.out.println("bye bye ");
-        */
-        Person st1 = new Student(1,"david");
-        st1.getId();
-        
-        //Person st1 = new Person(1,"david");
-          
-         
-        //st1.Display();
-
-        Student s1 = new Student(2, "ali",3.5f);
-        s1.Display();
-        Student s2 = new Student(1, "moh",4.5f);
-        s1.Display();
-        Student s3 = new Student(4,"gf");
-        s3.printdata();
-        s3.study();
-        Advisor ad1 = new Advisor(3,"sanad","cs");
-        ad1.Display();
-        Gs gg = new Gs(4,"mugdad"," ai",4.4f);
-        gg.Display();
-        Ug ug = new Ug (54, "hassan", "forloop", 22f);
-        ug.Display();
-        StudentsList sList = new StudentsList();
-        sList.addStudent(s1);
-        sList.addStudent(s2);
-        int id;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter id ");
-        id = scanner.nextInt();
-        Student target = sList.search(id);
-        if (target==null){
-            System.out.println("not exsit");
-        }else{
-            target.Display();
-        }
-        String Name;
-        System.out.println("enter name ");
-        Name = scanner.next();
-        target = sList.search(Name);
-        if(target == null){
-            System.out.println("not exsit");
-        
-        }else{
-            target.Display();
-
-    }
-
     }
 }
-
-

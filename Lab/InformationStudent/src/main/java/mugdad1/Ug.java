@@ -1,34 +1,34 @@
-
 package mugdad1;
 
-/**
- *
- * @author mugdad
- */
 public class Ug extends Student {
-    private String Project;
-    Ug(int Id,String Name , String Project){
-        super(Id,Name);
-        this.Project = Project;
+    private String project; // Changed to lowercase for consistency
+
+    // Constructor for Ug with ID, Name, and Project
+    public Ug(int id, String name, String project) {
+        super(id, name);
+        this.project = project;
     }
-    Ug(int Id,String Name , String Project , float Gpa){
-        super(Id,Name,Gpa);
-        this.Project = Project;
 
-    
-    
-}
+    // Constructor for Ug with ID, Name, Project, and GPA
+    public Ug(int id, String name, String project, float gpa) {
+        super(id, name, gpa);
+        this.project = project;
+    }
 
+    // Getter for Project
     public String getProject() {
-        return Project;
+        return project;
     }
 
-    public void setProject(String Project) {
-        this.Project = Project;
-    }
-    void Display(){
-        super.Display();
-        System.out.println("project " + Project);
+    // Setter for Project
+    public void setProject(String project) {
+        this.project = project;
     }
 
+    // Method to display student information and project
+    @Override
+    public void display() {
+        super.display(); // Call the display method from the Student class
+        System.out.println("Project: " + project);
+    }
 }

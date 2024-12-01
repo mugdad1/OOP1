@@ -60,6 +60,6 @@ public class Student {
         System.out.println("Student ID: " + studentId);
         System.out.println("Student Name: " + studentName);
         System.out.println("Student GPA: " + studentGPA);
-        System.out.println("adv"+adv.toString());
+        System.out.println("adv "+adv.toString());
     }
 }

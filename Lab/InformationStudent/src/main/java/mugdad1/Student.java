@@ -1,37 +1,31 @@
-
 package mugdad1;
 
-/**
- *
- * @author mugdad
- */
-public class Student extends Person implements Resonsible{  
-    float Gpa;
+public class Student extends Person implements Resonsible {  
+    private float gpa; // Changed to lowercase for consistency
     
-    Student(int Id , String Name){
-        
-        super(Id, Name);
+    // Constructor for Student with ID and Name
+    public Student(int id, String name) {
+        super(id, name);
     }
-    Student(int Id , String Name , float Gpa){
-        super(Id ,Name);
-        this.Gpa=Gpa;
-}
-    void Display(){
-        System.out.println("gp" + Gpa);
+
+    // Constructor for Student with ID, Name, and GPA
+    public Student(int id, String name, float gpa) {
+        super(id, name);
+        this.gpa = gpa;
     }
+
+    // Method to display GPA
+    public void display() {
+        System.out.println("GPA: " + gpa);
+    }
+
     @Override
     public void study() {
-        System.out.println("i'm student in java class");
-
-
+        System.out.println("I'm a student in Java class.");
     }
+
     @Override
     public void printdata() {
-        System.out.println("i'm student in python class");
-
+        System.out.println("I'm a student in Python class.");
     }
-
-
-
-
 }

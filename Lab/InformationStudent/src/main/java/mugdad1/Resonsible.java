@@ -1,8 +1,6 @@
 package mugdad1;
 
 public interface Resonsible {
-    abstract void study();
-    abstract void printdata();
-
-
+    void study(); // Abstract methods do not need the 'abstract' keyword
+    void printdata(); // Abstract methods do not need the 'abstract' keyword
 }

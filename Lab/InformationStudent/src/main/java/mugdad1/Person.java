@@ -1,38 +1,35 @@
 package mugdad1;
 
-/**
- *
- * @author mugdad
- */
-public abstract class Person { /*
-    * abstract remove to make coder 
-     */
-    private int Id;
-    private String Name;
+public abstract class Person {
+    private int id; // Changed to lowercase for consistency
+    private String name; // Changed to lowercase for consistency
 
-    public Person(int Id, String Name) {
-        this.Id = Id;
-        this.Name = Name;
+    // Constructor
+    public Person(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
+    // Getter for ID
     public int getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(int Id) {
-        this.Id = Id;
+    // Setter for ID
+    public void setId(int id) {
+        this.id = id;
     }
 
+    // Getter for Name
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    // Setter for Name
+    public void setName(String name) {
+        this.name = name;
     }
 
-    abstract void Display(); /*{
-        System.out.println("id = " + Id);
-        System.out.println("Name = " + Name);
-    }*/
+    // Abstract method to be implemented by subclasses
+    abstract void display(); // Changed to lowercase for consistency
 }

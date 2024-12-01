@@ -1,31 +1,34 @@
 package mugdad1;
 
-/**
- *
- * @author mugdad
- */
 public class Gs extends Student {
-    private String thesisT;
-    Gs(int Id, String Name ,String thesisT){
-        super(Id, Name);
-        this.thesisT = thesisT;
-    }
-    Gs(int Id, String Name ,String thesisT , float Gpa){
-        super(Id, Name ,Gpa);
-        this.thesisT = thesisT;
+    private String thesisTitle; // Changed to a more descriptive name
+
+    // Constructor for Gs with ID, Name, and Thesis Title
+    public Gs(int id, String name, String thesisTitle) {
+        super(id, name);
+        this.thesisTitle = thesisTitle;
     }
 
-    public String getThesisT() {
-        return thesisT;
+    // Constructor for Gs with ID, Name, Thesis Title, and GPA
+    public Gs(int id, String name, String thesisTitle, float gpa) {
+        super(id, name, gpa);
+        this.thesisTitle = thesisTitle;
     }
 
-    public void setThesisT(String thesisT) {
-        this.thesisT = thesisT;
+    // Getter for Thesis Title
+    public String getThesisTitle() {
+        return thesisTitle;
     }
-    void Display(){
-        super.Display();
-        System.out.println("thesis" +thesisT);
+
+    // Setter for Thesis Title
+    public void setThesisTitle(String thesisTitle) {
+        this.thesisTitle = thesisTitle;
     }
-    
-    
+
+    // Method to display student information and thesis title
+    @Override
+    public void display() {
+        super.display(); // Call the display method from the Student class
+        System.out.println("Thesis Title: " + thesisTitle);
+    }
 }

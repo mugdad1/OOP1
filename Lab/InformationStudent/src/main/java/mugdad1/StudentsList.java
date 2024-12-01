@@ -1,50 +1,44 @@
 package mugdad1;
 
 import java.util.ArrayList;
+
 public class StudentsList {
-
     private ArrayList<Student> studentsList;
-    public StudentsList(){
-        studentsList = new ArrayList<Student>();
 
-    }
-     void addStudent(Student student){
-    studentsList.add(student);
+    // Constructor
+    public StudentsList() {
+        studentsList = new ArrayList<>();
     }
 
-    public void DisplayStudents(){
-        for(Student s: studentsList){
-            s.Display();
+    // Method to add a student
+    public void addStudent(Student student) {
+        studentsList.add(student);
+    }
+
+    // Method to display all students
+    public void displayStudents() {
+        for (Student s : studentsList) {
+            s.display(); // Call the display method from the Student class
         }
     }
-    public Student search(int id){
-        Student targetStudent = null;
-        for(Student s: studentsList){
-            if(s.getId()==id){
-                targetStudent = s;
-                break;
-            
+
+    // Method to search for a student by ID
+    public Student search(int id) {
+        for (Student s : studentsList) {
+            if (s.getId() == id) {
+                return s; // Return the found student
             }
-
         }
-    return targetStudent;
+        return null; // Return null if not found
     }
-    public Student search(String name){
-        Student targetStudent = null;
-        for(Student s: studentsList){
-            if(s.getName().equals(name)){
-                targetStudent = s;
-                break;
-            
+
+    // Method to search for a student by name
+    public Student search(String name) {
+        for (Student s : studentsList) {
+            if (s.getName().equals(name)) {
+                return s; // Return the found student
             }
-
         }
-    return targetStudent;
+        return null; // Return null if not found
     }
-
-
-
-
-
 }
-
