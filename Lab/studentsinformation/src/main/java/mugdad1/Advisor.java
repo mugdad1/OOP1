@@ -1,54 +1,52 @@
 package mugdad1;
 
-/**
- *
- * @author mugdad
- */
 public class Advisor {
-    private int AdvisorId; // Use camelCase for variable names
-    private String AdvisorName;//attributes
-    private String AdvisorDept; // You can keep this as String if you prefer
-    Advisor(int AdvisorId , String AdvisorName , String AdvisorDept){
-        this.AdvisorId = AdvisorId;
-        this.AdvisorName = AdvisorName;
-        this.AdvisorDept = AdvisorDept;
-        
-    }
-   
-    public String toString()
-    {
-        return AdvisorId+" "+AdvisorName+" "+AdvisorDept;
-    }
-    public int getAdvisorId() {
-        return AdvisorId;
+    private int advisorId; // Use camelCase for variable names
+    private String advisorName; // Attributes
+    private String advisorDept; // You can keep this as String if you prefer
+
+    // Constructor
+    Advisor(int advisorId, String advisorName, String advisorDept) {
+        this.advisorId = advisorId;
+        this.advisorName = advisorName;
+        this.advisorDept = advisorDept;
     }
 
-    public void setAdvisorId(int AdvisorId) {
-        this.AdvisorId = AdvisorId;
+    // Override toString method for displaying advisor information
+    public String toString() {
+        return advisorId + " " + advisorName + " " + advisorDept;
+    }
+
+    // Getters
+    public int getAdvisorId() {
+        return advisorId;
     }
 
     public String getAdvisorName() {
-        return AdvisorName;
-        
-    }
-
-    public void setAdvisorName(String AdvisorName) {
-        this.AdvisorName = AdvisorName;
+        return advisorName;
     }
 
     public String getAdvisorDept() {
-        return AdvisorDept;
+        return advisorDept;
     }
 
-    public void setAdvisorDept(String AdvisorDept) {
-        this.AdvisorDept = AdvisorDept;
-    }
-    public void displayInfoadv(){
-        System.out.println("advisor name " + AdvisorName);
-        System.out.println("Advisor id" + AdvisorId);
-        System.out.println("Advisor dept" + AdvisorDept);
-        
+    // Setters
+    public void setAdvisorId(int advisorId) {
+        this.advisorId = advisorId;
     }
 
-    
+    public void setAdvisorName(String advisorName) {
+        this.advisorName = advisorName;
+    }
+
+    public void setAdvisorDept(String advisorDept) {
+        this.advisorDept = advisorDept;
+    }
+
+    // Method to display advisor information
+    public void displayInfoAdv() {
+        System.out.println("Advisor Name: " + advisorName);
+        System.out.println("Advisor ID: " + advisorId);
+        System.out.println("Advisor Department: " + advisorDept);
+    }
 }
