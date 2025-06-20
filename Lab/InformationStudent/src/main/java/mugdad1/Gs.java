@@ -1,5 +1,5 @@
 package mugdad1;
-
+//hi
 public class Gs extends Student {
     private String thesisTitle; // Changed to a more descriptive name
 
